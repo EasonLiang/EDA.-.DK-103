@@ -1735,17 +1735,6 @@ Wire Wire Line
 Connection ~ 1650 3800
 Wire Wire Line
 	1650 3800 1700 3800
-$Comp
-L Connector_Generic:Conn_02x02_Odd_Even J4
-U 1 1 6115024C
-P 2350 4000
-F 0 "J4" H 2400 4100 50  0000 C CNN
-F 1 "conn2X2" H 2800 4150 50  0000 C CNN
-F 2 "mypcb:CON2X2" H 2350 4000 50  0001 C CNN
-F 3 "~" H 2350 4000 50  0001 C CNN
-	1    2350 4000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1550 4000 2000 4000
 Wire Wire Line
@@ -1754,9 +1743,9 @@ Text Label 10050 3100 2    50   ~ 0
 I2C1_SCL
 Text Label 10050 3200 2    50   ~ 0
 I2C1_SDA
-Text Label 2650 4100 0    50   ~ 0
-I2C1_SCL
 Text Label 2650 4000 0    50   ~ 0
+I2C1_SCL
+Text Label 2650 4100 0    50   ~ 0
 I2C1_SDA
 $Comp
 L mySTM32:SP3232 U8
@@ -3709,7 +3698,7 @@ L Device:R_Small R5
 U 1 1 625F2275
 P 2000 3850
 F 0 "R5" H 2000 3700 50  0000 C CNN
-F 1 "4.7K" V 1900 3850 50  0000 C CNN
+F 1 "4.7K" V 1926 3842 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2000 3850 50  0001 C CNN
 F 3 "~" H 2000 3850 50  0001 C CNN
 	1    2000 3850
@@ -3734,8 +3723,6 @@ Wire Wire Line
 	2000 4000 2150 4000
 Wire Wire Line
 	2000 4000 2000 3950
-Wire Wire Line
-	2150 3950 2150 4000
 Wire Wire Line
 	2000 3750 2150 3750
 $Comp
@@ -3834,7 +3821,6 @@ Text Notes 850  10900 0    151  ~ 30
 Infrared Communication\n
 Text Notes 8350 11000 0    151  ~ 30
 Buzzer
-Connection ~ 2150 4000
 Text Notes 10650 9100 0    151  ~ 30
 PWR_FLAG
 Text Notes 13650 6600 0    151  ~ 30
@@ -3891,4 +3877,18 @@ Text Label 2700 1100 0    50   ~ 0
 5V
 Text Label 7100 1200 0    50   ~ 0
 5V
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J4
+U 1 1 6115024C
+P 2350 4100
+F 0 "J4" H 2400 4200 50  0000 C CNN
+F 1 "conn2X2" H 2800 4250 50  0000 C CNN
+F 2 "mypcb:CON2X2" H 2350 4100 50  0001 C CNN
+F 3 "~" H 2350 4100 50  0001 C CNN
+	1    2350 4100
+	1    0    0    1   
+$EndComp
+Connection ~ 2150 4100
+Wire Wire Line
+	2150 3950 2150 4100
 $EndSCHEMATC
