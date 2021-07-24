@@ -3586,18 +3586,6 @@ F 3 "" H 6150 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6150 1200
-$Comp
-L power:+5V #PWR054
-U 1 1 62339161
-P 7100 1200
-F 0 "#PWR054" H 7100 1050 50  0001 C CNN
-F 1 "+5V" H 7115 1373 50  0000 C CNN
-F 2 "" H 7100 1200 50  0001 C CNN
-F 3 "" H 7100 1200 50  0001 C CNN
-	1    7100 1200
-	1    0    0    -1  
-$EndComp
-Connection ~ 7100 1200
 Connection ~ 5650 1400
 Connection ~ 6600 1400
 Text Notes 4550 7650 0    151  ~ 30
@@ -3899,4 +3887,8 @@ Wire Wire Line
 Connection ~ 1200 10100
 Wire Wire Line
 	1200 10350 1250 10350
+Text Label 2700 1100 0    50   ~ 0
+5V
+Text Label 7100 1200 0    50   ~ 0
+5V
 $EndSCHEMATC
