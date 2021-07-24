@@ -329,8 +329,8 @@ ENDDEF
 #
 # Speaker
 #
-DEF Speaker SP 0 0 Y N 1 F N
-F0 "SP" -50 100 50 H V R CNN
+DEF Speaker Buzzer 0 0 Y N 1 F N
+F0 "Buzzer" 50 100 50 H V R CNN
 F1 "Speaker" 50 -250 50 H V R CNN
 F2 "" 0 -200 50 H I C CNN
 F3 "" -10 -50 50 H I C CNN
